@@ -1,0 +1,44 @@
+{
+  "verified_versions": {
+    "vieneu": "3.2.4",
+    "sea-g2p": "0.8.4"
+  },
+  "order": [
+    "raw paragraphs",
+    "sea_g2p.Normalizer(punc_norm=True)",
+    "split normalized text into chunks",
+    "phonemize_text_with_emotions (SEAPipeline: normalize again, then G2P)",
+    "ONNX generation",
+    "join chunk waveforms with boundary-specific silence",
+    "watermark segment waveform"
+  ],
+  "source_locations": {
+    "v3_infer": {
+      "file": "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\vieneu\\v3turbo.py",
+      "line": 386,
+      "symbol": "V3TurboVieNeuTTS.infer"
+    },
+    "v3_chunk_generation": {
+      "file": "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\vieneu\\v3turbo.py",
+      "line": 337,
+      "symbol": "V3TurboVieNeuTTS._infer_chunks"
+    },
+    "normalize_and_chunk": {
+      "file": "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\vieneu_utils\\phonemize_text.py",
+      "line": 285,
+      "symbol": "normalize_to_chunks_v3_with_gaps"
+    },
+    "sea_pipeline": {
+      "file": "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\sea_g2p\\pipeline.py",
+      "line": 12,
+      "symbol": "SEAPipeline.run"
+    }
+  },
+  "findings": {
+    "chunking": "after paragraph-level normalization",
+    "punctuation": "punc_norm=True in normalizer and actual phonemizer",
+    "skip_normalize": "available in vieneu_utils.phonemize_batch/phonemize_with_dict, but not exposed by the v3turbo infer path",
+    "double_normalization": "v3 chunks are already normalized, then the actual phonemizer runs SEAPipeline and normalizes each chunk again",
+    "mixed_language": "delegated to sea-g2p Vietnamese/English pipeline"
+  }
+}

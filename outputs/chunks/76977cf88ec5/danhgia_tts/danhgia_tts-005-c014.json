@@ -1,0 +1,15 @@
+{
+  "run_id": "76977cf88ec5",
+  "status": "ok",
+  "source_file": "danhgia_tts.txt",
+  "segment_id": "danhgia_tts-005",
+  "chunk_id": "danhgia_tts-005-c014",
+  "seed": 1218378151,
+  "attempts": 1,
+  "elapsed_seconds": 13.3073,
+  "duration_seconds": 1.92,
+  "sample_rate": 48000,
+  "audio_sha256": "14F869205F388D0CD3E6F83346014AF69B00CFB216A1351BA1CAD504C9D8ED1E",
+  "phonemes": "hwˌa6c bˌi6 xˈiɛɜw nˈaː6j ɲˈiɛ2w sˈyə4 ɗˈo4j.",
+  "audio_path": "outputs\\chunks\\76977cf88ec5\\danhgia_tts\\danhgia_tts-005-c014.wav"
+}

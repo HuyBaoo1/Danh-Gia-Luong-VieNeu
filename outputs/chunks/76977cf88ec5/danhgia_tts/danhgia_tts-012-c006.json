@@ -1,0 +1,15 @@
+{
+  "run_id": "76977cf88ec5",
+  "status": "ok",
+  "source_file": "danhgia_tts.txt",
+  "segment_id": "danhgia_tts-012",
+  "chunk_id": "danhgia_tts-012-c006",
+  "seed": 162377977,
+  "attempts": 1,
+  "elapsed_seconds": 51.9014,
+  "duration_seconds": 14.88,
+  "sample_rate": 48000,
+  "audio_sha256": "14DEF3543752F9F335D971A166BF5D54640CC8C162AACE0464391D4F7FD7459D",
+  "phonemes": "tʃˈoɜŋ bˈuən bˈaːɜn mˈaː t̪wˈiɜ vˌaː2 mˈəː4 ɹˈo6ŋ lˈiɛn lˈaː6c kwˈən sˈy6. mˈo6t̪ sˈoɜ kwˈaːn tʃˈyɜc vˌaː2 ŋˈi6 sˈi5, tʃˈɔŋ ɗˈɔɜ kˈɔɜ tˈyə6ŋ ŋˈi6 sˈi5 ɹˈɑːdʒɚ wˈɪkɚ, tʃˈi4 tʃˈiɜc vˈiɛ6c ɗˈɔɜn t̪ˈiɛɜp kwˈaːɜ mˈyɜc, tʃˈɔŋ xˌi ŋwˈaː6j tʃˈyə4ŋ hwˈaː kˈi2 mˈɑːɹkoʊ ɹˈuːbɪˌoʊ xˈa4ŋ ɗˈi6ɲ hˈaːj nˈyəɜc kˈə2n t̪ˈyəŋ t̪ˈaːɜc ˈəː4 kˈəɜp kˈaːw.",
+  "audio_path": "outputs\\chunks\\76977cf88ec5\\danhgia_tts\\danhgia_tts-012-c006.wav"
+}

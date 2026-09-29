@@ -1,0 +1,28 @@
+{
+  "run_id": "76977cf88ec5",
+  "model": "pnnbao-ump/VieNeu-TTS-v3-Turbo",
+  "model_revision": "067cf9d6abaf3ddb4de78135467aaa81502f0a6d",
+  "codec_repo": "OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano-ONNX",
+  "codec_revision": "ceff0d0749bfb3fa2d61149794ec6feef0d1e1ae",
+  "backend": "onnx",
+  "precision": "int8",
+  "device": "cpu",
+  "voice": "Minh Đức",
+  "sampling": {
+    "temperature": 0.8,
+    "top_k": 25,
+    "top_p": 0.95,
+    "max_new_frames": 300,
+    "repetition_penalty": 1.2
+  },
+  "seed_strategy": "sha256(chunk_id) + 20260925",
+  "sample_rate": 48000,
+  "chunks_total": 256,
+  "chunks_considered": 256,
+  "chunks_generated": 0,
+  "chunks_skipped": 256,
+  "chunks_failed": 0,
+  "segment_audio_complete": 0,
+  "segment_audio_skipped": 33,
+  "segment_audio_incomplete": 0
+}

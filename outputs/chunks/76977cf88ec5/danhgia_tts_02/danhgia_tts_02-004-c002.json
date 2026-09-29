@@ -1,0 +1,15 @@
+{
+  "run_id": "76977cf88ec5",
+  "status": "ok",
+  "source_file": "danhgia_tts_02.txt",
+  "segment_id": "danhgia_tts_02-004",
+  "chunk_id": "danhgia_tts_02-004-c002",
+  "seed": 1690430495,
+  "attempts": 2,
+  "elapsed_seconds": 17.0981,
+  "duration_seconds": 14.8,
+  "sample_rate": 48000,
+  "audio_sha256": "3D325AA2B33A1B96C92A34FC6BB9C09CDC1AB43CE4DF7B83E10A544DF2550B24",
+  "phonemes": "tˈɛw zˈy6 tˈaː4w ŋˈi6 ɗˈi6ɲ, zˈəːɜj hˈaː6n bˈaː mˈyəj fˈə2n tʃˈam sˌɛ5 ˈaːɜp zˈu6ŋ t̪ˌy2 nˈam hˈɔ6k hˈaːj ŋˈi2n xˌoŋ tʃˈam hˈaːj mˈyəj bˈa4j hˈaːj mˈyəj t̪ˈaːɜm vˌaː2 zˈyə6 tʃˈen nˈaŋ lˈy6c ŋˈon ŋˈy5 tʃˈyɜ xˌoŋ fˌaː4j kˈuəɜc t̪ˈi6c, vˌəːɜj mˈo6t̪ sˈoɜ fˈiɛn bˈaː4n nˈe1w ˈaːɜp zˈu6ŋ tʃˌɔ hˈɔ6k sˈiɲ xˌoŋ fˌaː4j kˈoŋ zˈən ˈiɜ.",
+  "audio_path": "outputs\\chunks\\76977cf88ec5\\danhgia_tts_02\\danhgia_tts_02-004-c002.wav"
+}

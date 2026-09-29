@@ -1,0 +1,24 @@
+{
+  "run_id": "76977cf88ec5",
+  "status": "ok",
+  "source_file": "danhgia_tts_02.txt",
+  "segment_id": "danhgia_tts_02-012",
+  "chunk_ids": [
+    "danhgia_tts_02-012-c001",
+    "danhgia_tts_02-012-c002",
+    "danhgia_tts_02-012-c003",
+    "danhgia_tts_02-012-c004",
+    "danhgia_tts_02-012-c005"
+  ],
+  "chunk_audio_sha256": [
+    "CBBBB33C78F3C2CD8A3B7E733FF3A7281EC69B7A81721B80377283D27AEC20E6",
+    "714F50210FF8DD2AD1F7E808347584251A02452C6CCA96BE7FEB27D0C35726EB",
+    "2C0FC3BA03EE235A1E2C86AD817A79071D394354C237645B240AD17268D738C0",
+    "948615EF4583BDFAC21C2EA088DC66BDF4BD0846BD2591143F6463C13DF034C4",
+    "8B841459EA8B5665F7C9EC67E8B80C5F94B6AF1991721F4BEBCAF24081A32026"
+  ],
+  "sample_rate": 48000,
+  "duration_seconds": 64.5,
+  "audio_sha256": "32AC0BCC77E1BF48B4F144F7240DFF51A2F3EE8D50AA7232BD036839C43EB4A2",
+  "audio_path": "outputs\\audio\\76977cf88ec5\\danhgia_tts_02\\danhgia_tts_02-012.wav"
+}

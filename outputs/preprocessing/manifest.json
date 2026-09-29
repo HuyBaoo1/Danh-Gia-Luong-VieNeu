@@ -1,0 +1,90 @@
+{
+  "run_id": "76977cf88ec5",
+  "inputs": [
+    {
+      "source_file": "danhgia_tts.txt",
+      "absolute_source": "C:\\Users\\ASUS\\Downloads\\Danh-gia-luong\\vieneu_normalization_eval\\data\\input\\danhgia_tts.txt",
+      "encoding": "UTF-8",
+      "bom_removed_for_processing": false,
+      "bytes": 28743,
+      "sha256": "40F0AEAE73021A4C6447FDD39D345638AFA6AB0FE55D4F596E69E3D5E8B5F163",
+      "segments": 17
+    },
+    {
+      "source_file": "danhgia_tts_02.txt",
+      "absolute_source": "C:\\Users\\ASUS\\Downloads\\Danh-gia-luong\\vieneu_normalization_eval\\data\\input\\danhgia_tts_02.txt",
+      "encoding": "UTF-8",
+      "bom_removed_for_processing": false,
+      "bytes": 23161,
+      "sha256": "BBE614E05AD0A815D688C3F4B44F691E32398694BF574A75E1012775F7936351",
+      "segments": 16
+    }
+  ],
+  "total_segments": 33,
+  "total_chunks": 256,
+  "total_candidates": 1877,
+  "non_idempotent_chunks": 27,
+  "environment": {
+    "python": "3.11.9",
+    "python_executable": "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "os": "Windows-10-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "logical_cpu": 8,
+    "ram_gb": 7.7,
+    "gpu": "NVIDIA GeForce MX330, 2048 MiB, 511.69",
+    "cuda": "not-used (ONNX CPU baseline)",
+    "packages": {
+      "vieneu": "3.2.4",
+      "sea-g2p": "0.8.4",
+      "onnxruntime": "1.28.0",
+      "onnxruntime-gpu": "not-installed",
+      "numpy": "2.4.6",
+      "soundfile": "0.14.0",
+      "PyYAML": "6.0.3"
+    }
+  },
+  "pipeline": {
+    "verified_versions": {
+      "vieneu": "3.2.4",
+      "sea-g2p": "0.8.4"
+    },
+    "order": [
+      "raw paragraphs",
+      "sea_g2p.Normalizer(punc_norm=True)",
+      "split normalized text into chunks",
+      "phonemize_text_with_emotions (SEAPipeline: normalize again, then G2P)",
+      "ONNX generation",
+      "join chunk waveforms with boundary-specific silence",
+      "watermark segment waveform"
+    ],
+    "source_locations": {
+      "v3_infer": {
+        "file": "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\vieneu\\v3turbo.py",
+        "line": 386,
+        "symbol": "V3TurboVieNeuTTS.infer"
+      },
+      "v3_chunk_generation": {
+        "file": "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\vieneu\\v3turbo.py",
+        "line": 337,
+        "symbol": "V3TurboVieNeuTTS._infer_chunks"
+      },
+      "normalize_and_chunk": {
+        "file": "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\vieneu_utils\\phonemize_text.py",
+        "line": 285,
+        "symbol": "normalize_to_chunks_v3_with_gaps"
+      },
+      "sea_pipeline": {
+        "file": "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\sea_g2p\\pipeline.py",
+        "line": 12,
+        "symbol": "SEAPipeline.run"
+      }
+    },
+    "findings": {
+      "chunking": "after paragraph-level normalization",
+      "punctuation": "punc_norm=True in normalizer and actual phonemizer",
+      "skip_normalize": "available in vieneu_utils.phonemize_batch/phonemize_with_dict, but not exposed by the v3turbo infer path",
+      "double_normalization": "v3 chunks are already normalized, then the actual phonemizer runs SEAPipeline and normalizes each chunk again",
+      "mixed_language": "delegated to sea-g2p Vietnamese/English pipeline"
+    }
+  }
+}

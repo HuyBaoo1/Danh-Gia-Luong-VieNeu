@@ -1,0 +1,39 @@
+project_version: 1
+
+inputs:
+  - data/input/danhgia_tts.txt
+  - data/input/danhgia_tts_02.txt
+
+model:
+  repo: pnnbao-ump/VieNeu-TTS-v3-Turbo
+  revision: 067cf9d6abaf3ddb4de78135467aaa81502f0a6d
+  mode: v3turbo
+  backend: onnx
+  precision: int8
+  device: cpu
+  voice: "Minh Đức"
+  style: tu_nhien
+  codec_repo: OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano-ONNX
+
+inference:
+  seed: 20260925
+  temperature: 0.8
+  top_k: 25
+  top_p: 0.95
+  max_new_frames: 300
+  repetition_penalty: 1.2
+  max_chars: 256
+  silence_p: 0.15
+  crossfade_p: 0.0
+  sample_rate: 48000
+  threads: 4
+  apply_watermark: true
+
+evaluation:
+  review_file: data/reference/review.csv
+  preprocessing_findings_file: data/reference/known_preprocessing_errors.csv
+  require_human_audio_review: true
+
+outputs:
+  root: outputs
+
