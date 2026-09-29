@@ -10,9 +10,9 @@ Raw text -> Normalized text -> Phoneme -> Generated audio
 
 ## Baseline
 
-- Model: `pnnbao-ump/VieNeu-TTS-v3-Turbo`
+- Model: `pnnbao-ump/VieNeu-TTS-v3-Turbo` , `pnnbao97/VieNeu-TTS`
 - Model revision: `067cf9d6abaf3ddb4de78135467aaa81502f0a6d`
-- VieNeu: `3.2.4`
+- VieNeu: `3.2.4`, `3.8.3`
 - sea-g2p: `0.8.4`
 - Backend: ONNX int8 / CPU
 - Voice: Minh Đức
