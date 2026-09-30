@@ -39,8 +39,8 @@ Sáu lỗi được xác nhận liên quan đến:
 
 - `GPT-5.5-Cyber`
 - khoảng năm `2027-28` -> đọc thành `hai nghìn không trăm hai mươi bảy gạch hai mươi tám`
-- khoảng ngày `24-25/9/2026` -> đọc thành `hai mươi tư hai mươi lăm tháng 9 năm 2026`
-- khoảng tần số `1-120Hz` -> đọc thành ` một một trăm hai mươi hát zét`
+- khoảng ngày `24-25/9/2026` -> đọc thành `hai mươi tư gạch nối hai mươi lăm tháng 9 năm 2026`
+- khoảng tần số `1-120Hz` -> đọc thành ` một một trăm hai mươi héc`
 - ngày dạng slash: `25/9`, `16/10`, `16/11`, `16/12`
 
 ## Kết luận
