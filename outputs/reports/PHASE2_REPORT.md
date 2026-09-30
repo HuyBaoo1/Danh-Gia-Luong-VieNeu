@@ -42,12 +42,12 @@ No MODEL_ERROR has been confirmed so far.
 
 ## Normalization Errors Confirmed During Listening
 
-- `danhgia_tts-007-c003`: expected 'gi pi ti năm chấm năm cyber', observed 'g? ph? t? g?ch n?i n?m ch?m n?m g?ch n?i cyber' (`normalizer`, HIGH).
-- `danhgia_tts_02-004-c002`: expected 'năm học hai nghìn không trăm hai mươi bảy đến hai nghìn không trăm hai mươi tám', observed 'n?m h?c hai ngh?n kh?ng tr?m hai m??i b?y hai m??i t?m' (`normalizer`, HIGH).
-- `danhgia_tts_02-008-c001`: expected 'từ ngày hai mươi bốn đến ngày hai mươi lăm tháng chín năm hai nghìn không trăm hai mươi sáu', observed 't? ng?y hai m??i b?n ng?y hai m??i l?m th?ng ch?n n?m hai ngh?n kh?ng tr?m hai m??i s?u' (`normalizer`, HIGH).
-- `danhgia_tts_02-011-c003`: expected 'biến thiên một đến một trăm hai mươi héc', observed 'bi?n thi?n m?t m?t tr?m hai m??i h?c' (`normalizer`, HIGH).
-- `danhgia_tts_02-013-c002`: expected 'các ngày cụ thể là ngày hai mươi lăm tháng chín và ngày mười sáu tháng mười', observed 'c?c ng?y c? th? l? hai m??i l?m tr?n ch?n, m??i s?u tr?n m??i' (`normalizer`, HIGH).
-- `danhgia_tts_02-013-c003`: expected 'ngày mười sáu tháng mười một và ngày mười sáu tháng mười hai', observed 'm??i s?u tr?n m??i m?t v? m??i s?u tr?n m??i hai' (`normalizer`, HIGH).
+- `danhgia_tts-007-c003`: expected 'gi pi ti năm chấm năm cyber', observed 'gi phi ti gạch nối năm chấm năm gạch nối cyber' (`normalizer`, HIGH).
+- `danhgia_tts_02-004-c002`: expected 'năm học hai nghìn không trăm hai mươi bảy đến hai nghìn không trăm hai mươi tám', observed 'năm học hai nghìn không trăm hai mươi bảy hai mươi tám' (`normalizer`, HIGH).
+- `danhgia_tts_02-008-c001`: expected 'từ ngày hai mươi bốn đến ngày hai mươi lăm tháng chín năm hai nghìn không trăm hai mươi sáu', observed 'từ ngày hai mươi bốn ngày hai mươi lăm tháng chín năm hai nghìn không trăm hai mươi sáu' (`normalizer`, HIGH).
+- `danhgia_tts_02-011-c003`: expected 'biến thiên một đến một trăm hai mươi héc', observed 'biến thiên một một trăm hai mươi héc' (`normalizer`, HIGH).
+- `danhgia_tts_02-013-c002`: expected 'các ngày cụ thể là ngày hai mươi lăm tháng chín và ngày mười sáu tháng mười', observed 'các ngày cụ thể là ngày hai mươi lăm trên chín, mươi sáu trên mười' (`normalizer`, HIGH).
+- `danhgia_tts_02-013-c003`: expected 'ngày mười sáu tháng mười một và ngày mười sáu tháng mười hai', observed 'mười sáu trên mười một và mười sáu trên mươi hai' (`normalizer`, HIGH).
 
 ## Phase 1 Findings Awaiting Listening
 
